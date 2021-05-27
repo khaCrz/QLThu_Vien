@@ -44,11 +44,18 @@ namespace QLThu_Vien1
         private void button1_Click(object sender, EventArgs e)
         {
             Form_DesignInfor FD = new Form_DesignInfor(_ID);
+            FD.Show();
             FD.FormClosed += close;
         }
         public void close(object sender, EventArgs e)
         {
             GetID(_ID);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            EditUser fe = new EditUser();
+            fe.Show();
         }
     }
 }

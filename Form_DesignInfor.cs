@@ -51,6 +51,7 @@ namespace QLThu_Vien1
             man.Name = textBox_Name.Text;
             man.NS = dateTimePicker1.Value;
             man.Phone = Convert.ToInt32(textBox_Phone.Text);
+            man.CMND = textBox_CMND.Text;
             man.Email = textBox_Email.Text;
             if (radioButton_Male.Checked == true)
                 man.Gender = "Nam";

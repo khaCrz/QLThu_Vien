@@ -27,15 +27,15 @@ namespace QLThu_Vien1
         {
             if (checklogin == true)
             {
-                if (!panel3.Controls.Contains(UCThuVienSach.Instance))
+                if (!panel3.Controls.Contains(UCThuvienAdmin.Instance))
                 {
-                    panel3.Controls.Add(UCThuVienSach.Instance);
-                    UCThuVienSach.Instance.Dock = DockStyle.Fill;
-                    UCThuVienSach.Instance.BringToFront();
+                    panel3.Controls.Add(UCThuvienAdmin.Instance);
+                    UCThuvienAdmin.Instance.Dock = DockStyle.Fill;
+                    UCThuvienAdmin.Instance.BringToFront();
                 }
                 else
                 {
-                    UCThuVienSach.Instance.BringToFront();
+                    UCThuvienAdmin.Instance.BringToFront();
                 }
             }
             else
@@ -68,16 +68,16 @@ namespace QLThu_Vien1
         {
             if (checklogin == true)
             {
-                if (!panel3.Controls.Contains(UCHistoryBorrow.Instance))
+                if (!panel3.Controls.Contains(UCHistoryAdmin.Instance))
                 {
-                    UCHistoryBorrow.Instance.load(_ID);
-                    panel3.Controls.Add(UCHistoryBorrow.Instance);
-                    UCHistoryBorrow.Instance.Dock = DockStyle.Fill;
-                    UCHistoryBorrow.Instance.BringToFront();
+                    UCHistoryAdmin.Instance.load();
+                    panel3.Controls.Add(UCHistoryAdmin.Instance);
+                    UCHistoryAdmin.Instance.Dock = DockStyle.Fill;
+                    UCHistoryAdmin.Instance.BringToFront();
                 }
                 else
                 {
-                    UCHistoryBorrow.Instance.BringToFront();
+                    UCHistoryAdmin.Instance.BringToFront();
                 }
             }
             else
